@@ -1,0 +1,52 @@
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2026-11-06 12:00+0000\n"
+"Last-Translator: Glaux\n"
+"Language-Team: Spanish\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+msgid "sushi.status.description"
+msgstr "Informes de uso COUNTER para {$contextName}."
+
+msgid "sushi.exception.1"
+msgstr "La fecha solicitada ({$beginDate} o {$endDate}) está a mitad de mes; sin embargo, solo se tienen en cuenta meses completos."
+
+msgid "sushi.exception.2"
+msgstr "El ID de elemento solicitado ({$itemId}) no es un número. Este parámetro espera un ID de envío."
+
+msgid "sushi.exception.3"
+msgstr "El parámetro item_id contiene más de un valor, pero solo se acepta uno. No se tienen en cuenta los siguientes valores: item_id={$itemIdValues}"
+
+msgid "sushi.exception.1030.missing"
+msgstr "Falta {$params}."
+
+msgid "sushi.exception.1030.invalid"
+msgstr "{$params} no válido."
+
+msgid "sushi.exception.3020.dateFormat"
+msgstr "Formato no válido para begin_date o end_date."
+
+msgid "sushi.exception.3020.dateRange"
+msgstr "Intervalo de fechas no válido."
+
+msgid "sushi.exception.3030"
+msgstr "No hay datos de uso disponibles para las fechas solicitadas. La solicitud era del {$beginDate} al {$endDate}."
+
+msgid "sushi.exception.3031"
+msgstr "La solicitud era del {$beginDate} al {$endDate}; sin embargo, solo hay datos de uso hasta el {$lastDate}."
+
+msgid "sushi.exception.3032"
+msgstr "La solicitud era del {$beginDate} al {$endDate}; sin embargo, solo hay datos de uso desde el {$earliestDate}."
+
+msgid "sushi.exception.3050"
+msgstr "La solicitud contenía parámetros ({$params}) que no se reconocen en el contexto del informe que se está atendiendo."
+
+msgid "sushi.exception.3060"
+msgstr "No se admiten los siguientes valores de filtro: {$filterValues}"
+
+msgid "sushi.exception.3062"
+msgstr "No se admiten los siguientes valores de atributo: {$attributeValues}"
