@@ -227,10 +227,13 @@ class PKPSubmissionFilesUploadBaseForm extends Form
                         // Include only the file being revised so fetch() validation passes
                         $revisedFile = Repo::submissionFile()->get($this->getRevisedFileId());
                         $this->_submissionFiles = $revisedFile ? [$revisedFile->getId() => $revisedFile] : [];
-                    } else {
-                        $this->_submissionFiles = [];
+                        return $this->_submissionFiles;
                     }
-                    return $this->_submissionFiles;
+
+                    if (Application::hasSingleFileRepresentations()) {
+                        $this->_submissionFiles = [];
+                        return $this->_submissionFiles;
+                    }
                 }
 
                 $collector = Repo::submissionFile()

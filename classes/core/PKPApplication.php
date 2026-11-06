@@ -799,6 +799,11 @@ abstract class PKPApplication implements iPKPApplicationInfoProvider
         return 'sectionId';
     }
 
+    public static function hasSingleFileRepresentations(): bool
+    {
+        return true;
+    }
+
     /**
      * Get the payment manager.
      */
